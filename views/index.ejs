@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet', href='/css/bootstrap.css'/>
+    <link rel='stylesheet', href='/css/bootstrap.min.css'/>
+    <style>
+    	.font-sm: {
+    		font-size:13px;
+    	}
+    	.btn-action {
+    background-color: #f6e312;
+    background-image: -moz-linear-gradient(center top , #f6e312 0%, #f9c80d 100%);
+    border-color: #e9ac1a;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    height: 34px;
+    line-height: 32px;
+    margin: 30px 0 0;
+    overflow: visible;
+    padding: 0 15px;
+    text-decoration: none !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+    white-space: nowrap;
+    width: auto;
+}
+    </style>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js'/>
+    <script src='./js/bootstrap.js'></script>
+     <script src='./js/bootstrap.min.js'></script>
+     <link rel="icon" href="https://static.licdn.com/scds/common/u/images/logos/favicons/v1/favicon.ico">
+  </head>
+  <body style="padding:0px">
+  	<div class="login-header container-fluid" style="background-color:#f4f4f4;padding:10px;margin-bottom:10%">
+  		<figure style="font-size: 32px; font-family:Comic Sans MS;text-align:center">Community Book</figure>
+  		
+	</div>
+
+  	<div class="login-container">
+	  	<div class="container-fluid">
+	  		<div class="col-md-6">
+	  			<label style="font-weight:bold;font-size:14px">Registered User?</label><br/>
+	  			<form name="frmLogin" method="post" class="form-signin container-fluid">
+	  				<span class="col-md-12" style="vertical-align: middle; margin-top: 15px; font-weight:bold; color: red">
+			  			<%=errMsg%>
+			  		</span>
+		    		<div class="col-md-12" style="padding:5px">
+	  					<input name="inputEmail" type="email" id="inputEmail"  autofocus class="form-control" placeholder="Email Address" required />
+	  				</div>
+	  				<div class="col-md-12" style="padding:5px">
+	  					<input name="inputPassword" type="password" id="inputPassword"  autofocus class="form-control" placeholder="Password" required/>
+	  				</div>
+		    		<div class="col-md-12" style="padding:9px">
+		    		</div>
+		    		<div class="col-md-12" style="padding:0px !important">
+		    			<input name="btnSignIn" class="btn btn-primary" style="color:#cccccc;margin-top:10px;width:100%" value="Sign in" type="submit" />
+		    		</div>
+		  		</form>
+	  		</div>
+	  		<div class="col-md-6">
+	  			<label style="font-weight:bold;font-size:14px">New User?</label><br/>
+	  			<form name="frmRegister" id="frmRegister" method="post">
+	  			<div class="container-fluid">
+	  				<div class="col-md-6" style="padding:5px">
+	  					<input type="text" name="txtFirstName" id="txtFirstName" class="form-control" placeholder="First Name" value="" required autofocus>
+	  				</div>
+	  				<div class="col-md-6" style="padding:5px">
+	  					<input type="text" name="txtLastName" id="txtLastName" class="form-control" placeholder="Last Name" value="" required autofocus>
+	  				</div>
+	  				<div class="col-md-12" style="padding:5px">
+	  					<input type="email" name="txtEmail" id="txtEmail" class="form-control" placeholder="Email Address" value="" required autofocus>
+	  				</div>
+	  				<div class="col-md-12" style="padding:5px">
+	  					<input type="password" name="txtPassword" id="txtPassword" class="form-control" value="" placeholder="Password (6 or more characters.)" required autofocus>
+	  				</div>
+
+	  				<div class="col-md-12" style="padding:0px !important">
+	  					<input type="submit" name="btnRegister" id="btnRegister" class="btn btn-primary" style="width:100%" value="Join Now"/>
+	  				</div>
+	  			</div>
+	  			</form>
+	  		</div>
+	  		
+	  	</div>
+	  	
+	</div>
+    <div class="login-footer"></div>
+  </body>
+</html>
